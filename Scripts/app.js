@@ -40,8 +40,30 @@
         });
 
         newH2.addEventListener('mouseover',MouseOver);
-
         newH2.addEventListener('mouseout',MouseOut);
+
+
+        let firstParagraph = document.createElement("p");
+        firstParagraph.textContent = "This is short paragraph";
+
+        let parentDiv = newH2.parentNode;
+
+
+        
+        
+        
+
+       parentDiv.insertBefore(firstParagraph,newH2);
+
+       let ul = document.getElementsByTagName("ul")[0];
+       console.log(ul);
+
+       
+       
+
+
+
+
           
     }
 
